@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="508.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewController">
+   <children>
+      <AnchorPane layoutY="-69.0" prefHeight="574.0" prefWidth="613.0">
+         <children>
+            <ImageView layoutY="68.0" onKeyPressed="#start" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../GROUP_80/src/assets/images/bg.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hero" fitHeight="38.0" fitWidth="41.0" layoutX="499.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/hero.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

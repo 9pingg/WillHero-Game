@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+
+<Pane fx:id="ball" maxHeight="38.0" maxWidth="44.0" minHeight="28.0" minWidth="28.0" prefHeight="38.0" prefWidth="44.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_elements.controllers.HeroController">
+   <children>
+      <Circle fx:id="circle_ball" fill="DODGERBLUE" layoutX="14.0" layoutY="14.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" styleClass="fill-pink" />
+      <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../assets/hero.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="246" maxWidth="331" minHeight="246" minWidth="331" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_elements.controllers.WillHeroLogoController">
+    <VBox alignment="CENTER" opacity="0.7" scaleX="0.75" scaleY="0.75">
+        <FlowPane prefHeight="134.0" prefWidth="213.0" />
+    </VBox>
+
+    <stylesheets>
+        <URL value="@../../style/style.css" />
+    </stylesheets>
+</Pane>

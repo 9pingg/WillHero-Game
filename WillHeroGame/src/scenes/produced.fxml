@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane minHeight="1024" minWidth="768" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <top>
+        <BorderPane>
+            <left>
+                <Pane onMouseClicked="#backToHome" prefHeight="101.0" prefWidth="94.0" styleClass="small-on-hover" BorderPane.alignment="CENTER">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <Circle fill="white" layoutX="48.0" layoutY="53.0" radius="43.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="back-button" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" BorderPane.alignment="CENTER" />
+                    <ImageView fitHeight="54.0" fitWidth="59.0" layoutX="18.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="BOTTOM_CENTER">
+                        <Image url="@../assets/back.png" />
+                    </ImageView>
+                </Pane>
+            </left>
+            <center>
+                <Text fill="#cf3030" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="heading-text" text="Made By" BorderPane.alignment="CENTER" />
+            </center>
+            <padding>
+                <Insets left="50.0" right="50.0" top="50.0" />
+            </padding>
+        </BorderPane>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="40">
+            <Text fill="white" styleClass="names" text="Vatsal" />
+            <Text fill="white" styleClass="names" text="Vedant" />
+            <Button id="feedbackButton" onAction="#handleFeedback" styleClass="feedback-button" text=" Send Feedback">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            </Button>
+        </VBox>
+    </center>
+    <stylesheets>
+        <URL value="@../style/style.css" />
+    </stylesheets>
+</BorderPane>
